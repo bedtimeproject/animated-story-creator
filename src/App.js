@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import ScrollAnimationCreator from "./ScrollAnimationCreator/ScrollAnimationCreator";
+
+/**
+ * @function App
+ * @description The Root of the animated story creator application. This
+ * component is rendered directly in strict mode in index.js
+ * @author Alexander Burdiss
+ * @since 7/11/21
+ * @version 1.0.0
+ */
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ScrollAnimationCreator />
     </div>
   );
 }
-
-export default App;
