@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a617e044.chunk.css",
-    "main.js": "/static/js/main.1bbdd345.chunk.js",
-    "main.js.map": "/static/js/main.1bbdd345.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1891a4f5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1891a4f5.js.map",
-    "static/js/2.fdc5e54d.chunk.js": "/static/js/2.fdc5e54d.chunk.js",
-    "static/js/2.fdc5e54d.chunk.js.map": "/static/js/2.fdc5e54d.chunk.js.map",
-    "static/js/3.a3f2137c.chunk.js": "/static/js/3.a3f2137c.chunk.js",
-    "static/js/3.a3f2137c.chunk.js.map": "/static/js/3.a3f2137c.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.fdc5e54d.chunk.js.LICENSE.txt": "/static/js/2.fdc5e54d.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/animated-story-creator/static/css/main.a617e044.chunk.css",
+    "main.js": "/animated-story-creator/static/js/main.1bbdd345.chunk.js",
+    "main.js.map": "/animated-story-creator/static/js/main.1bbdd345.chunk.js.map",
+    "runtime-main.js": "/animated-story-creator/static/js/runtime-main.c8fe015a.js",
+    "runtime-main.js.map": "/animated-story-creator/static/js/runtime-main.c8fe015a.js.map",
+    "static/js/2.fdc5e54d.chunk.js": "/animated-story-creator/static/js/2.fdc5e54d.chunk.js",
+    "static/js/2.fdc5e54d.chunk.js.map": "/animated-story-creator/static/js/2.fdc5e54d.chunk.js.map",
+    "static/js/3.a3f2137c.chunk.js": "/animated-story-creator/static/js/3.a3f2137c.chunk.js",
+    "static/js/3.a3f2137c.chunk.js.map": "/animated-story-creator/static/js/3.a3f2137c.chunk.js.map",
+    "index.html": "/animated-story-creator/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/animated-story-creator/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.fdc5e54d.chunk.js.LICENSE.txt": "/animated-story-creator/static/js/2.fdc5e54d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/animated-story-creator/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1891a4f5.js",
+    "static/js/runtime-main.c8fe015a.js",
     "static/js/2.fdc5e54d.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.1bbdd345.chunk.js"
