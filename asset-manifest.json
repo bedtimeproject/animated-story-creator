@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/animated-story-creator/static/css/main.a617e044.chunk.css",
-    "main.js": "/animated-story-creator/static/js/main.1bbdd345.chunk.js",
-    "main.js.map": "/animated-story-creator/static/js/main.1bbdd345.chunk.js.map",
-    "runtime-main.js": "/animated-story-creator/static/js/runtime-main.c8fe015a.js",
-    "runtime-main.js.map": "/animated-story-creator/static/js/runtime-main.c8fe015a.js.map",
-    "static/js/2.fdc5e54d.chunk.js": "/animated-story-creator/static/js/2.fdc5e54d.chunk.js",
-    "static/js/2.fdc5e54d.chunk.js.map": "/animated-story-creator/static/js/2.fdc5e54d.chunk.js.map",
-    "static/js/3.a3f2137c.chunk.js": "/animated-story-creator/static/js/3.a3f2137c.chunk.js",
-    "static/js/3.a3f2137c.chunk.js.map": "/animated-story-creator/static/js/3.a3f2137c.chunk.js.map",
+    "main.css": "/animated-story-creator/static/css/main.bad1755c.chunk.css",
+    "main.js": "/animated-story-creator/static/js/main.d20422a6.chunk.js",
+    "main.js.map": "/animated-story-creator/static/js/main.d20422a6.chunk.js.map",
+    "runtime-main.js": "/animated-story-creator/static/js/runtime-main.7cdae484.js",
+    "runtime-main.js.map": "/animated-story-creator/static/js/runtime-main.7cdae484.js.map",
+    "static/js/2.2eb9f920.chunk.js": "/animated-story-creator/static/js/2.2eb9f920.chunk.js",
+    "static/js/2.2eb9f920.chunk.js.map": "/animated-story-creator/static/js/2.2eb9f920.chunk.js.map",
     "index.html": "/animated-story-creator/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/animated-story-creator/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.fdc5e54d.chunk.js.LICENSE.txt": "/animated-story-creator/static/js/2.fdc5e54d.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/animated-story-creator/static/media/logo.6ce24c58.svg"
+    "static/css/main.bad1755c.chunk.css.map": "/animated-story-creator/static/css/main.bad1755c.chunk.css.map",
+    "static/js/2.2eb9f920.chunk.js.LICENSE.txt": "/animated-story-creator/static/js/2.2eb9f920.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8fe015a.js",
-    "static/js/2.fdc5e54d.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.1bbdd345.chunk.js"
+    "static/js/runtime-main.7cdae484.js",
+    "static/js/2.2eb9f920.chunk.js",
+    "static/css/main.bad1755c.chunk.css",
+    "static/js/main.d20422a6.chunk.js"
   ]
 }
