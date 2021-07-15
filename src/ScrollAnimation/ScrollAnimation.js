@@ -26,18 +26,19 @@ import React, { useEffect } from "react";
  */
 export default function ScrollAnimation({ children, bodyStyleMinHeight }) {
   useEffect(() => {
-    document.body.style.minHeight = bodyStyleMinHeight;
+    document.querySelector("#page").style.minHeight = bodyStyleMinHeight;
     function handleScroll() {
       document.body.style.setProperty(
         "--scroll",
-        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+        window.pageYOffset /
+          (document.querySelector("#page").offsetHeight - window.innerHeight)
       );
     }
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.body.style.minHeight = "";
+      document.querySelector("#page").style.minHeight = "";
       document.body.style.removeProperty("--scroll");
     };
   }, [bodyStyleMinHeight]);

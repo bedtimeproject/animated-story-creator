@@ -1,8 +1,8 @@
 import React from "react";
 
-import { getContrast } from "../../../util/getContrast/getContrast";
-
 import "./DefaultStanza.scss";
+
+import { getContrast } from "../../utils/getContrast/getContrast";
 
 /**
  * @function Stanza

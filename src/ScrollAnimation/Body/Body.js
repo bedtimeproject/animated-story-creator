@@ -46,7 +46,7 @@ export default function Body({
   return (
     <div>
       <style>{`
-        body {
+        #page {
           animation-name: scrollBody;
           animation-duration: 1s;
           animation-timing-function: ease-in-out;

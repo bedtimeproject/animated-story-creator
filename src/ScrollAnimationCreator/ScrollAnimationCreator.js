@@ -1,5 +1,6 @@
-import React from "react";
-import { scaleRotate as Menu } from "react-burger-menu";
+import React, { useState } from "react";
+import { slide as Menu } from "react-burger-menu";
+import Content from "./Content/Content";
 
 import Form from "./Form/Form";
 import "./ScrollAnimationCreator.scss";
@@ -13,14 +14,14 @@ import "./ScrollAnimationCreator.scss";
  * @todo Make the scrolling happen inside div#page, not outside.
  */
 export default function ScrollAnimationCreator() {
+  const [story, setStory] = useState({});
+
   return (
     <div id={"wrapper"}>
       <Menu pageWrapId={"page"} outerContainerId={"wrapper"}>
-        <Form />
+        <Form story={story} setStory={setStory} />
       </Menu>
-      <div id={"page"} className="Content-Wrap">
-        <div>Hello, Content!</div>
-      </div>
+      <Content story={story} />
     </div>
   );
 }
