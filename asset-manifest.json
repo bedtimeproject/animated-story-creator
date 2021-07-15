@@ -1,20 +1,30 @@
 {
   "files": {
-    "main.css": "/animated-story-creator/static/css/main.bad1755c.chunk.css",
-    "main.js": "/animated-story-creator/static/js/main.d20422a6.chunk.js",
-    "main.js.map": "/animated-story-creator/static/js/main.d20422a6.chunk.js.map",
+    "main.css": "/animated-story-creator/static/css/main.5f94f4be.chunk.css",
+    "main.js": "/animated-story-creator/static/js/main.3f90423b.chunk.js",
+    "main.js.map": "/animated-story-creator/static/js/main.3f90423b.chunk.js.map",
     "runtime-main.js": "/animated-story-creator/static/js/runtime-main.7cdae484.js",
     "runtime-main.js.map": "/animated-story-creator/static/js/runtime-main.7cdae484.js.map",
-    "static/js/2.2eb9f920.chunk.js": "/animated-story-creator/static/js/2.2eb9f920.chunk.js",
-    "static/js/2.2eb9f920.chunk.js.map": "/animated-story-creator/static/js/2.2eb9f920.chunk.js.map",
+    "static/js/2.67d1712e.chunk.js": "/animated-story-creator/static/js/2.67d1712e.chunk.js",
+    "static/js/2.67d1712e.chunk.js.map": "/animated-story-creator/static/js/2.67d1712e.chunk.js.map",
     "index.html": "/animated-story-creator/index.html",
-    "static/css/main.bad1755c.chunk.css.map": "/animated-story-creator/static/css/main.bad1755c.chunk.css.map",
-    "static/js/2.2eb9f920.chunk.js.LICENSE.txt": "/animated-story-creator/static/js/2.2eb9f920.chunk.js.LICENSE.txt"
+    "static/css/main.5f94f4be.chunk.css.map": "/animated-story-creator/static/css/main.5f94f4be.chunk.css.map",
+    "static/js/2.67d1712e.chunk.js.LICENSE.txt": "/animated-story-creator/static/js/2.67d1712e.chunk.js.LICENSE.txt",
+    "static/media/BlueFlowers.835c7e42.svg": "/animated-story-creator/static/media/BlueFlowers.835c7e42.svg",
+    "static/media/BlueKite.7fc7089e.svg": "/animated-story-creator/static/media/BlueKite.7fc7089e.svg",
+    "static/media/CaveEntrance.79821ad1.svg": "/animated-story-creator/static/media/CaveEntrance.79821ad1.svg",
+    "static/media/CherryPie.5cb58bd8.svg": "/animated-story-creator/static/media/CherryPie.5cb58bd8.svg",
+    "static/media/Constellation1.af64ddd2.svg": "/animated-story-creator/static/media/Constellation1.af64ddd2.svg",
+    "static/media/Mountain.14b161b9.svg": "/animated-story-creator/static/media/Mountain.14b161b9.svg",
+    "static/media/Ramen.2873e3b9.svg": "/animated-story-creator/static/media/Ramen.2873e3b9.svg",
+    "static/media/Sun.9a0bbc72.svg": "/animated-story-creator/static/media/Sun.9a0bbc72.svg",
+    "static/media/Town.d82e6146.svg": "/animated-story-creator/static/media/Town.d82e6146.svg",
+    "static/media/Treasure.14ad7938.svg": "/animated-story-creator/static/media/Treasure.14ad7938.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7cdae484.js",
-    "static/js/2.2eb9f920.chunk.js",
-    "static/css/main.bad1755c.chunk.css",
-    "static/js/main.d20422a6.chunk.js"
+    "static/js/2.67d1712e.chunk.js",
+    "static/css/main.5f94f4be.chunk.css",
+    "static/js/main.3f90423b.chunk.js"
   ]
 }
