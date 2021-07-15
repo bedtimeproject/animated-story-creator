@@ -1,4 +1,20 @@
 .Form {
   background-color: #dddddd;
-  height: 100%;
+  color: black;
+}
+
+form {
+  height: calc(100vh - 30px);
+  overflow: scroll;
+  padding: 20px;
+}
+
+.disclaimer {
+  padding-bottom: 40px;
+}
+
+.Save-Button {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
