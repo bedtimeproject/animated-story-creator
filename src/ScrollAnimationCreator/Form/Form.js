@@ -20,6 +20,23 @@ export default function BTForm({
   backgroundColor,
   setBackgroundColor,
 }) {
+  /**
+   * @function Form~triggerDownload
+   * @description Creates a new JSON blob from the state object, and downloads
+   * it.
+   * @author Alexander Burdiss
+   * @since 7/20/21
+   * @version 1.0.0
+   */
+  function triggerDownload() {
+    const json = JSON.stringify(story);
+    const blob = new Blob([json]);
+    const fileDownloadUrl = URL.createObjectURL(blob);
+    const downloadButton = document.querySelector("#downloadLink");
+    downloadButton.href = fileDownloadUrl;
+    downloadButton.click();
+  }
+
   return (
     <div className="Form-Container">
       <Formik
@@ -241,9 +258,27 @@ export default function BTForm({
                   )}
                 </FieldArray>
               </div>
-              <button type="submit" className="Save-Button">
-                Save
-              </button>
+              <div className="Save-Button-Container">
+                <button type="submit" className="Save-Button">
+                  Render
+                </button>
+                <button
+                  type="button"
+                  className="Save-Button"
+                  onClick={triggerDownload}
+                >
+                  Download
+                </button>
+              </div>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a
+                style={{ display: "none" }}
+                download={`story${new Date().toLocaleDateString()}${new Date().toLocaleTimeString()}.json`}
+                href={""}
+                id="downloadLink"
+              >
+                download it
+              </a>
             </Form>
           </>
         )}

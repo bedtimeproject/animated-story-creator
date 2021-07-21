@@ -13,10 +13,14 @@
   padding-bottom: 40px;
 }
 
-.Save-Button {
-  width: 200px;
+.Save-Button-Container {
   display: block;
+  width: 250px;
   margin: 0 auto;
+}
+.Save-Button {
+  width: 100px;
+  margin: 0 10px;
 }
 
 .Form-Stanza-Container {
