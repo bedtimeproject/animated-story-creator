@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/animated-story-creator/static/css/main.b03402cf.chunk.css",
-    "main.js": "/animated-story-creator/static/js/main.4351bbd1.chunk.js",
-    "main.js.map": "/animated-story-creator/static/js/main.4351bbd1.chunk.js.map",
+    "main.js": "/animated-story-creator/static/js/main.0ae2cf24.chunk.js",
+    "main.js.map": "/animated-story-creator/static/js/main.0ae2cf24.chunk.js.map",
     "runtime-main.js": "/animated-story-creator/static/js/runtime-main.7cdae484.js",
     "runtime-main.js.map": "/animated-story-creator/static/js/runtime-main.7cdae484.js.map",
     "static/js/2.d82b0302.chunk.js": "/animated-story-creator/static/js/2.d82b0302.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.7cdae484.js",
     "static/js/2.d82b0302.chunk.js",
     "static/css/main.b03402cf.chunk.css",
-    "static/js/main.4351bbd1.chunk.js"
+    "static/js/main.0ae2cf24.chunk.js"
   ]
 }
