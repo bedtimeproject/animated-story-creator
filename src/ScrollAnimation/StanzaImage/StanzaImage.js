@@ -13,6 +13,17 @@ import {
   slideupright,
 } from "./StanzaImageUtils";
 
+import BlueFlowers from "../../assets/images/BlueFlowers.svg";
+import CaveEntrance from "../../assets/images/CaveEntrance.svg";
+import CherryPie from "../../assets/images/CherryPie.svg";
+import Constellation1 from "../../assets/images/Constellation1.svg";
+import Kite from "../../assets/images/BlueKite.svg";
+import Ramen from "../../assets/images/Ramen.svg";
+import Town from "../../assets/images/Town.svg";
+import Treasure from "../../assets/images/Treasure.svg";
+import Mountain from "../../assets/images/Mountain.svg";
+import Sun from "../../assets/images/Sun.svg";
+
 /**
  * @function stanzaImage
  * @description Displays One image for the stanza.
@@ -127,7 +138,23 @@ export default function StanzaImage({
           top: { top: "5%", center: "30%", bottom: "55%" }[positionY],
         }}
       >
-        {children}
+        <img
+          src={
+            {
+              "Blue Flowers": BlueFlowers,
+              "Cave Entrance": CaveEntrance,
+              "Cherry Pie": CherryPie,
+              "Constellation 1": Constellation1,
+              Kite: Kite,
+              Ramen: Ramen,
+              Town: Town,
+              Treasure: Treasure,
+              Mountain: Mountain,
+              Sun: Sun,
+            }[children]
+          }
+          alt={children}
+        />
       </div>
     </div>
   );

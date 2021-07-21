@@ -1,9 +1,9 @@
-.Form {
+.Form-Container {
   background-color: #dddddd;
   color: black;
 }
 
-form {
+.Form {
   height: calc(100vh - 30px);
   overflow: scroll;
   padding: 20px;
@@ -17,4 +17,11 @@ form {
   width: 200px;
   display: block;
   margin: 0 auto;
+}
+
+.Form-Stanza-Container {
+  margin: 10px 0;
+  border: 1px grey solid;
+  padding: 4px;
+  border-radius: 4px;
 }
