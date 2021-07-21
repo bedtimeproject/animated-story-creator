@@ -148,18 +148,35 @@ export default function BTForm({
                                                   name={`stanzas.${index}.images.${imageindex}.component`}
                                                   as="select"
                                                 >
-                                                  <option>Cave Entrance</option>
+                                                  <option>Action Box</option>
+                                                  <option>Bed</option>
                                                   <option>Blue Flowers</option>
+                                                  <option>Cave Entrance</option>
                                                   <option>Cherry Pie</option>
                                                   <option>
                                                     Constellation 1
                                                   </option>
+                                                  <option>
+                                                    Constellation 2
+                                                  </option>
+                                                  <option>
+                                                    Constellation 3
+                                                  </option>
+                                                  <option>Full Moon</option>
                                                   <option>Kite</option>
+                                                  <option>Mountain</option>
+                                                  <option>Mountains</option>
+                                                  <option>Mount Everest</option>
+                                                  <option>Music Notes</option>
+                                                  <option>Oak</option>
+                                                  <option>Penny</option>
+                                                  <option>Pink Poodle</option>
                                                   <option>Ramen</option>
+                                                  <option>Shrub 1</option>
+                                                  <option>Shrub 2</option>
+                                                  <option>Sun</option>
                                                   <option>Town</option>
                                                   <option>Treasure</option>
-                                                  <option>Mountain</option>
-                                                  <option>Sun</option>
                                                 </Field>
                                               </div>
                                               <div>
@@ -307,6 +324,7 @@ export default function BTForm({
               </div>
               <div className="Save-Button-Container">
                 <input
+                  className="File-Upload"
                   type="file"
                   accept="application/json"
                   onChange={(event) => setFileUpload(event.target.files[0])}

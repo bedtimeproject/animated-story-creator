@@ -23,8 +23,24 @@ import Town from "../../assets/images/Town.svg";
 import Treasure from "../../assets/images/Treasure.svg";
 import Mountain from "../../assets/images/Mountain.svg";
 import Sun from "../../assets/images/Sun.svg";
+import ActionBox from "../../assets/images/ActionBox.svg";
+import Bed from "../../assets/images/Bed.svg";
+import Constellation2 from "../../assets/images/Constellation2.svg";
+import Constellation3 from "../../assets/images/Constellation3.svg";
+import FullMoon from "../../assets/images/FullMoon.svg";
+import Mountains from "../../assets/images/Mountains.svg";
+import MountEverest from "../../assets/images/MountEverest.svg";
+import MusicNotes from "../../assets/images/MusicNotes.svg";
+import Oak from "../../assets/images/Oak.svg";
+import Penny from "../../assets/images/Penny.svg";
+import PinkPoodle from "../../assets/images/PinkPoodle.svg";
+import Shrub1 from "../../assets/images/Shrub1.svg";
+import Shrub2 from "../../assets/images/Shrub2.svg";
 
 /**
+ * NOTE: This is different than the one in the Bedtime project!
+ *
+ *
  * @function stanzaImage
  * @description Displays One image for the stanza.
  * @param props The JSX props passed to this React component
@@ -151,6 +167,19 @@ export default function StanzaImage({
               Treasure: Treasure,
               Mountain: Mountain,
               Sun: Sun,
+              "Action Box": ActionBox,
+              Bed: Bed,
+              "Constellation 2": Constellation2,
+              "Constellation 3": Constellation3,
+              "Full Moon": FullMoon,
+              Mountains: Mountains,
+              "Mount Everest": MountEverest,
+              "Music Notes": MusicNotes,
+              Oak: Oak,
+              Penny: Penny,
+              "Pink Poodle": PinkPoodle,
+              "Shrub 1": Shrub1,
+              "Shrub 2": Shrub2,
             }[children]
           }
           alt={children}
