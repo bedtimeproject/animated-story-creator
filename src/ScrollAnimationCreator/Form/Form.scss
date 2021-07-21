@@ -4,7 +4,7 @@
 }
 
 .Form {
-  height: calc(100vh - 30px);
+  height: calc(100vh - 60px);
   overflow: scroll;
   padding: 20px;
 }
@@ -15,12 +15,16 @@
 
 .Save-Button-Container {
   display: block;
-  width: 250px;
+  width: 280px;
   margin: 0 auto;
 }
 .Save-Button {
-  width: 100px;
+  width: 72px;
   margin: 0 10px;
+}
+
+.Green-Button {
+  background-color: skyblue;
 }
 
 .Form-Stanza-Container {

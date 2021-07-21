@@ -5,8 +5,6 @@ import Content from "./Content/Content";
 import Form from "./Form/Form";
 import "./ScrollAnimationCreator.scss";
 
-import { testStory } from "./testStory";
-
 /**
  * @function ScrollAnimationCreator
  * @author Alexander Burdiss
@@ -14,7 +12,7 @@ import { testStory } from "./testStory";
  * @version 1.0.0
  */
 export default function ScrollAnimationCreator() {
-  const [story, setStory] = useState(testStory);
+  const [story, setStory] = useState([]);
   const [backgroundColor, setBackgroundColor] = useState("#DDDDDD");
 
   return (

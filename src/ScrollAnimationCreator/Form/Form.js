@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Field, Form, FieldArray } from "formik";
 
 import "./Form.scss";
@@ -20,6 +20,39 @@ export default function BTForm({
   backgroundColor,
   setBackgroundColor,
 }) {
+  const [fileUpload, setFileUpload] = useState(null);
+
+  /**
+   * @function Form~useFile
+   * @description Sets the uploaded file to the state variable, and calls
+   * a function to load that file into state.
+   * @author Alexander Burdiss
+   * @since 7/20/21
+   * @version 1.0.0
+   */
+  function useFile() {
+    if (fileUpload != null) {
+      const reader = new FileReader();
+      reader.onload = setFileToGlobalState;
+      reader.readAsText(fileUpload);
+    } else {
+      alert("Upload a file first!");
+    }
+  }
+
+  /**
+   * @function setFileToGlobalState
+   * @description Loads the uploaded file into global state.
+   * @param {event} event The event that triggered the FileReader
+   * @author Alexander Burdiss
+   * @since 7/20/21
+   * @version 1.0.0
+   */
+  function setFileToGlobalState(event) {
+    const json = JSON.parse(event.target.result);
+    setStory(json);
+  }
+
   /**
    * @function Form~triggerDownload
    * @description Creates a new JSON blob from the state object, and downloads
@@ -259,8 +292,13 @@ export default function BTForm({
                 </FieldArray>
               </div>
               <div className="Save-Button-Container">
-                <button type="submit" className="Save-Button">
-                  Render
+                <input
+                  type="file"
+                  accept="application/json"
+                  onChange={(event) => setFileUpload(event.target.files[0])}
+                />
+                <button type="button" className="Save-Button" onClick={useFile}>
+                  Upload
                 </button>
                 <button
                   type="button"
@@ -268,6 +306,9 @@ export default function BTForm({
                   onClick={triggerDownload}
                 >
                   Download
+                </button>
+                <button type="submit" className="Save-Button Green-Button">
+                  Render
                 </button>
               </div>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
