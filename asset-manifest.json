@@ -1,22 +1,35 @@
 {
   "files": {
-    "main.css": "/animated-story-creator/static/css/main.b03402cf.chunk.css",
-    "main.js": "/animated-story-creator/static/js/main.0ae2cf24.chunk.js",
-    "main.js.map": "/animated-story-creator/static/js/main.0ae2cf24.chunk.js.map",
+    "main.css": "/animated-story-creator/static/css/main.cf2c72eb.chunk.css",
+    "main.js": "/animated-story-creator/static/js/main.4430b694.chunk.js",
+    "main.js.map": "/animated-story-creator/static/js/main.4430b694.chunk.js.map",
     "runtime-main.js": "/animated-story-creator/static/js/runtime-main.7cdae484.js",
     "runtime-main.js.map": "/animated-story-creator/static/js/runtime-main.7cdae484.js.map",
     "static/js/2.d82b0302.chunk.js": "/animated-story-creator/static/js/2.d82b0302.chunk.js",
     "static/js/2.d82b0302.chunk.js.map": "/animated-story-creator/static/js/2.d82b0302.chunk.js.map",
     "index.html": "/animated-story-creator/index.html",
-    "static/css/main.b03402cf.chunk.css.map": "/animated-story-creator/static/css/main.b03402cf.chunk.css.map",
+    "static/css/main.cf2c72eb.chunk.css.map": "/animated-story-creator/static/css/main.cf2c72eb.chunk.css.map",
     "static/js/2.d82b0302.chunk.js.LICENSE.txt": "/animated-story-creator/static/js/2.d82b0302.chunk.js.LICENSE.txt",
+    "static/media/ActionBox.2df3b500.svg": "/animated-story-creator/static/media/ActionBox.2df3b500.svg",
+    "static/media/Bed.9577669f.svg": "/animated-story-creator/static/media/Bed.9577669f.svg",
     "static/media/BlueFlowers.835c7e42.svg": "/animated-story-creator/static/media/BlueFlowers.835c7e42.svg",
     "static/media/BlueKite.7fc7089e.svg": "/animated-story-creator/static/media/BlueKite.7fc7089e.svg",
     "static/media/CaveEntrance.79821ad1.svg": "/animated-story-creator/static/media/CaveEntrance.79821ad1.svg",
     "static/media/CherryPie.5cb58bd8.svg": "/animated-story-creator/static/media/CherryPie.5cb58bd8.svg",
     "static/media/Constellation1.af64ddd2.svg": "/animated-story-creator/static/media/Constellation1.af64ddd2.svg",
+    "static/media/Constellation2.b9083cbe.svg": "/animated-story-creator/static/media/Constellation2.b9083cbe.svg",
+    "static/media/Constellation3.de858f71.svg": "/animated-story-creator/static/media/Constellation3.de858f71.svg",
+    "static/media/FullMoon.b1438497.svg": "/animated-story-creator/static/media/FullMoon.b1438497.svg",
+    "static/media/MountEverest.89cbb7f2.svg": "/animated-story-creator/static/media/MountEverest.89cbb7f2.svg",
     "static/media/Mountain.14b161b9.svg": "/animated-story-creator/static/media/Mountain.14b161b9.svg",
+    "static/media/Mountains.34c12af4.svg": "/animated-story-creator/static/media/Mountains.34c12af4.svg",
+    "static/media/MusicNotes.6b696369.svg": "/animated-story-creator/static/media/MusicNotes.6b696369.svg",
+    "static/media/Oak.670a17e9.svg": "/animated-story-creator/static/media/Oak.670a17e9.svg",
+    "static/media/Penny.a2f1d71d.svg": "/animated-story-creator/static/media/Penny.a2f1d71d.svg",
+    "static/media/PinkPoodle.e574ece7.svg": "/animated-story-creator/static/media/PinkPoodle.e574ece7.svg",
     "static/media/Ramen.2873e3b9.svg": "/animated-story-creator/static/media/Ramen.2873e3b9.svg",
+    "static/media/Shrub1.8a8c754f.svg": "/animated-story-creator/static/media/Shrub1.8a8c754f.svg",
+    "static/media/Shrub2.61269abb.svg": "/animated-story-creator/static/media/Shrub2.61269abb.svg",
     "static/media/Sun.9a0bbc72.svg": "/animated-story-creator/static/media/Sun.9a0bbc72.svg",
     "static/media/Town.d82e6146.svg": "/animated-story-creator/static/media/Town.d82e6146.svg",
     "static/media/Treasure.14ad7938.svg": "/animated-story-creator/static/media/Treasure.14ad7938.svg"
@@ -24,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.7cdae484.js",
     "static/js/2.d82b0302.chunk.js",
-    "static/css/main.b03402cf.chunk.css",
-    "static/js/main.0ae2cf24.chunk.js"
+    "static/css/main.cf2c72eb.chunk.css",
+    "static/js/main.4430b694.chunk.js"
   ]
 }
