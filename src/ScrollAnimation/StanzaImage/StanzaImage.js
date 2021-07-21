@@ -36,7 +36,7 @@ import Penny from "../../assets/images/Penny.svg";
 import PinkPoodle from "../../assets/images/PinkPoodle.svg";
 import Shrub1 from "../../assets/images/Shrub1.svg";
 import Shrub2 from "../../assets/images/Shrub2.svg";
-
+console.log(ActionBox);
 /**
  * NOTE: This is different than the one in the Bedtime project!
  *

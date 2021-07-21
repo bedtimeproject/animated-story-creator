@@ -104,8 +104,11 @@ export default function BTForm({
                               >
                                 X
                               </button>
-                              <label htmlFor={`stanzas.${index}.stanza`}>
-                                Stanza
+                              <label
+                                htmlFor={`stanzas.${index}.stanza`}
+                                className="blue"
+                              >
+                                Stanza {index + 1}
                               </label>
                               <Field
                                 name={`stanzas.${index}.stanza`}
@@ -135,7 +138,7 @@ export default function BTForm({
                                               >
                                                 X
                                               </button>
-                                              <legend>
+                                              <legend className="blue">
                                                 Image {imageindex + 1}
                                               </legend>
                                               <div>
