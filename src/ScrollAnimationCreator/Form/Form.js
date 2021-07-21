@@ -76,6 +76,7 @@ export default function BTForm({
         initialValues={{
           stanzas: story,
         }}
+        enableReinitialize
         onSubmit={(values) => {
           setStory(values.stanzas);
         }}
