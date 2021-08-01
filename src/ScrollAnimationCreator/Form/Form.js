@@ -151,35 +151,60 @@ export default function BTForm({
                                                   name={`stanzas.${index}.images.${imageindex}.component`}
                                                   as="select"
                                                 >
-                                                  <option>Action Box</option>
-                                                  <option>Bed</option>
-                                                  <option>Blue Flowers</option>
-                                                  <option>Cave Entrance</option>
-                                                  <option>Cherry Pie</option>
-                                                  <option>
-                                                    Constellation 1
-                                                  </option>
-                                                  <option>
-                                                    Constellation 2
-                                                  </option>
-                                                  <option>
-                                                    Constellation 3
-                                                  </option>
-                                                  <option>Full Moon</option>
-                                                  <option>Kite</option>
-                                                  <option>Mountain</option>
-                                                  <option>Mountains</option>
-                                                  <option>Mount Everest</option>
-                                                  <option>Music Notes</option>
-                                                  <option>Oak</option>
-                                                  <option>Penny</option>
-                                                  <option>Pink Poodle</option>
-                                                  <option>Ramen</option>
-                                                  <option>Shrub 1</option>
-                                                  <option>Shrub 2</option>
-                                                  <option>Sun</option>
-                                                  <option>Town</option>
-                                                  <option>Treasure</option>
+                                                  <optgroup label="Newport Nebraska">
+                                                    <option>Alaska Flag</option>
+                                                    <option>
+                                                      California Flag
+                                                    </option>
+                                                    <option>
+                                                      City Skyline
+                                                    </option>
+                                                    <option>Corn</option>
+                                                    <option>Grass</option>
+                                                    <option>Surfboard</option>
+                                                    <option>Swimsuit</option>
+                                                    <option>Umbrella</option>
+                                                    <option>
+                                                      Wave Outline
+                                                    </option>
+                                                  </optgroup>
+                                                  <optgroup label="Guide to Sunset">
+                                                    <option>Action Box</option>
+                                                    <option>Bed</option>
+                                                    <option>
+                                                      Blue Flowers
+                                                    </option>
+                                                    <option>
+                                                      Cave Entrance
+                                                    </option>
+                                                    <option>Cherry Pie</option>
+                                                    <option>
+                                                      Constellation 1
+                                                    </option>
+                                                    <option>
+                                                      Constellation 2
+                                                    </option>
+                                                    <option>
+                                                      Constellation 3
+                                                    </option>
+                                                    <option>Full Moon</option>
+                                                    <option>Kite</option>
+                                                    <option>Mountain</option>
+                                                    <option>Mountains</option>
+                                                    <option>
+                                                      Mount Everest
+                                                    </option>
+                                                    <option>Music Notes</option>
+                                                    <option>Oak</option>
+                                                    <option>Penny</option>
+                                                    <option>Pink Poodle</option>
+                                                    <option>Ramen</option>
+                                                    <option>Shrub 1</option>
+                                                    <option>Shrub 2</option>
+                                                    <option>Sun</option>
+                                                    <option>Town</option>
+                                                    <option>Treasure</option>
+                                                  </optgroup>
                                                 </Field>
                                               </div>
                                               <div>

@@ -13,6 +13,18 @@ import {
   slideupright,
 } from "./StanzaImageUtils";
 
+// Newport Nebraska
+import AlaskaFlag from "../../assets/images/AlaskaFlag.svg";
+import CaliforniaFlag from "../../assets/images/CaliforniaFlag.svg";
+import CitySkyline from "../../assets/images/CitySkyline.svg";
+import Corn from "../../assets/images/Corn.svg";
+import Grass from "../../assets/images/Grass.svg";
+import Surfboard from "../../assets/images/Surfboard.svg";
+import Swimsuit from "../../assets/images/Swimsuit.svg";
+import Umbrella from "../../assets/images/Umbrella.svg";
+import WaveOutline from "../../assets/images/WaveOutline.svg";
+
+// Guide to Sunset
 import BlueFlowers from "../../assets/images/BlueFlowers.svg";
 import CaveEntrance from "../../assets/images/CaveEntrance.svg";
 import CherryPie from "../../assets/images/CherryPie.svg";
@@ -36,7 +48,7 @@ import Penny from "../../assets/images/Penny.svg";
 import PinkPoodle from "../../assets/images/PinkPoodle.svg";
 import Shrub1 from "../../assets/images/Shrub1.svg";
 import Shrub2 from "../../assets/images/Shrub2.svg";
-console.log(ActionBox);
+
 /**
  * NOTE: This is different than the one in the Bedtime project!
  *
@@ -157,6 +169,17 @@ export default function StanzaImage({
         <img
           src={
             {
+              // Newport Nebraska
+              "Alaska Flag": AlaskaFlag,
+              "California Flag": CaliforniaFlag,
+              "City Skyline": CitySkyline,
+              Corn: Corn,
+              Grass: Grass,
+              Surfboard: Surfboard,
+              Swimsuit: Swimsuit,
+              Umbrella: Umbrella,
+              "Wave Outline": WaveOutline,
+              // Guide to Sunset
               "Blue Flowers": BlueFlowers,
               "Cave Entrance": CaveEntrance,
               "Cherry Pie": CherryPie,
