@@ -12,6 +12,8 @@ import { slidedownleft } from "./animations/slidedownleft/slidedownleft";
 import { slidedownright } from "./animations/slidedownright/slidedownright";
 import { slideupleft } from "./animations/slideupleft/slideupleft";
 import { slideupright } from "./animations/slideupright/slideupright";
+import { longslideleft } from "./animations/longslideleft/longslideleft";
+import { longslideright } from "./animations/longslideright/longslideright";
 
 // Newport Nebraska
 import AlaskaFlag from "../../assets/images/AlaskaFlag.svg";
@@ -97,7 +99,7 @@ export default function StanzaImage({
         #stanza${index}Image${imageIndex} {
           animation-name: stanza${index}${animation}${imageIndex};
           animation-duration: 1s;
-          animation-timing-function: ease-in-out;
+          animation-timing-function: linear;
         }
 
         #stanza${index}Image${imageIndex} img {
@@ -155,6 +157,18 @@ export default function StanzaImage({
         ${
           animation === "slideupright"
             ? slideupright(index, imageIndex, stanzaDuration, oneIndexPercent)
+            : ""
+        }
+
+        ${
+          animation === "longslideleft"
+            ? longslideleft(index, imageIndex, stanzaDuration, oneIndexPercent)
+            : ""
+        }
+
+        ${
+          animation === "longslideright"
+            ? longslideright(index, imageIndex, stanzaDuration, oneIndexPercent)
             : ""
         }
       `}</style>

@@ -113,6 +113,8 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="slideup">Slide Up</option>
           <option value="slideleft">Slide Left</option>
           <option value="slideright">Slide Right</option>
+          <option value="longslideleft">Long Slide Left</option>
+          <option value="longslideright">Long Slide Right</option>
           <option value="slidedownleft">Slide Down Left</option>
           <option value="slidedownright">Slide Down Right</option>
           <option value="slideupleft">Slide Up Left</option>
