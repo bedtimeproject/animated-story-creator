@@ -65,7 +65,7 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
           </>
         )}
       </FieldArray>
-      <div>
+      <div className="Background-Label-Input">
         <label htmlFor={`stanzas.${index}.stanza`}>Background</label>
         <Field name={`stanzas.${index}.background`} type="text" />
       </div>

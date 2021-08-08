@@ -17,7 +17,7 @@ import { Field } from "formik";
  */
 export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
   return (
-    <fieldset key={index + "" + imageindex} className="Form-Stanza-Container">
+    <fieldset key={index + "" + imageindex} className="Form-Image-Container">
       <button
         type="button"
         className="secondary"
@@ -28,9 +28,9 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         X
       </button>
       <legend className="blue">Image {imageindex + 1}</legend>
-      <div>
+      <div className="Label-Input-Group First">
         <label htmlFor={`stanzas.${index}.images.${imageindex}.component`}>
-          image
+          Image
         </label>
         <Field
           name={`stanzas.${index}.images.${imageindex}.component`}
@@ -74,9 +74,9 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           </optgroup>
         </Field>
       </div>
-      <div>
+      <div className="Label-Input-Group">
         <label htmlFor={`stanzas.${index}.images.${imageindex}.positionY`}>
-          positionY
+          Vertical
         </label>
         <Field
           name={`stanzas.${index}.images.${imageindex}.positionY`}
@@ -87,9 +87,9 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="bottom">Bottom</option>
         </Field>
       </div>
-      <div>
+      <div className="Label-Input-Group">
         <label htmlFor={`stanzas.${index}.images.${imageindex}.positionX`}>
-          positionX
+          Horizontal
         </label>
         <Field
           name={`stanzas.${index}.images.${imageindex}.positionX`}
@@ -100,9 +100,9 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="right">Right</option>
         </Field>
       </div>
-      <div>
+      <div className="Label-Input-Group">
         <label htmlFor={`stanzas.${index}.images.${imageindex}.animation`}>
-          animation
+          Animation
         </label>
         <Field
           name={`stanzas.${index}.images.${imageindex}.animation`}
@@ -119,7 +119,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="slideupright">Slide Up Right</option>
         </Field>
       </div>
-      <div>
+      <div className="Label-Input-Group">
         <label htmlFor={`stanzas.${index}.images.${imageindex}.stanzaCount`}>
           Stanza Count
         </label>

@@ -39,12 +39,48 @@
   }
 }
 
-.Form-Stanza-Container {
+.Form-Stanza-Container,
+.Form-Image-Container {
   margin: 10px 0;
   border: 1px #625ace solid;
   padding: 4px;
   border-radius: 4px;
   position: relative;
+
+  textarea {
+    max-width: 100%;
+  }
+
+  div.Label-Input-Group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    input {
+      width: 80px;
+    }
+
+    select {
+      width: 130px;
+    }
+  }
+
+  div.Label-Input-Group.Top {
+    margin-top: 5px;
+  }
+
+  div.Background-Label-Input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 80px;
+    }
+  }
+}
+
+.Form-Image-Container .secondary {
+  margin-top: -10px;
 }
 
 .secondary {
