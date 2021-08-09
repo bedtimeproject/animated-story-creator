@@ -26,7 +26,7 @@ export default function Content({ story }) {
           {story.title}
         </Title>
         <Body
-          stanzas={story.body}
+          story={story}
           stanzaBackgroundColor={story.stanzaBackgroundColor}
           defaultBackgroundColor={story.defaultBackgroundColor}
           stanzaType="default"

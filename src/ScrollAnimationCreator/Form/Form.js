@@ -123,6 +123,19 @@ export default function BTForm({ story, setStory }) {
                     <option value="default">Default</option>
                   </Field>
                 </div>
+
+                <div className="Default-Option">
+                  <div>
+                    <label htmlFor={"story.animationOverlap"}>
+                      Animation Overlap
+                    </label>
+                  </div>
+                  <Field name={"story.animationOverlap"} as="select">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                  </Field>
+                </div>
+
                 <TitleCard />
 
                 <FieldArray name="story.body">

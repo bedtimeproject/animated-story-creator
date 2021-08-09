@@ -1,6 +1,7 @@
 export const testStory = {
   defaultBackgroundColor: "#DDDDDD",
   stanzaBackgroundColor: "#8bc9e4",
+  animationOverlap: "true",
   title: "A Scroll Animation",
   author: "FostyWally",
   titleCard: "default",
