@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Formik, Form, FieldArray } from "formik";
+import { Formik, Form, FieldArray, Field } from "formik";
 
 import "./Form.scss";
 import StanzaRepeatable from "./StanzaRepeatable/StanzaRepeatable";
+import TitleCard from "./TitleCard/TitleCard";
+import AttributionCard from "./AttributionCard/AttributionCard";
 
 /**
  * @namespace Form
@@ -13,12 +15,7 @@ import StanzaRepeatable from "./StanzaRepeatable/StanzaRepeatable";
  * @since 7/11/21
  * @version 2.0.1
  */
-export default function BTForm({
-  story,
-  setStory,
-  backgroundColor,
-  setBackgroundColor,
-}) {
+export default function BTForm({ story, setStory }) {
   const [fileUpload, setFileUpload] = useState(null);
 
   /**
@@ -73,29 +70,68 @@ export default function BTForm({
     <div className="Form-Container">
       <Formik
         initialValues={{
-          stanzas: story,
+          story: story,
         }}
         enableReinitialize
         onSubmit={(values) => {
-          setStory(values.stanzas);
+          setStory(values.story);
         }}
       >
         {({ values }) => (
           <>
             <Form>
               <div className="Form">
-                <div>[Default Stanza Background Color]</div>
-                <input
-                  value={backgroundColor}
-                  onChange={(e) => setBackgroundColor(e.target.value)}
-                />
+                <div className="Default-Option">
+                  <div>Default Background</div>
+                  <input
+                    type="color"
+                    value={values.story.defaultBackgroundColor}
+                    onChange={(e) =>
+                      setStory((previous) => {
+                        return {
+                          ...previous,
+                          defaultBackgroundColor: e.target.value,
+                        };
+                      })
+                    }
+                  />
+                </div>
 
-                <FieldArray name="stanzas">
+                <div className="Default-Option">
+                  <div>Card Background</div>
+                  <input
+                    type="color"
+                    value={values.story.stanzaBackgroundColor}
+                    onChange={(e) =>
+                      setStory((previous) => {
+                        return {
+                          ...previous,
+                          stanzaBackgroundColor: e.target.value,
+                        };
+                      })
+                    }
+                  />
+                </div>
+
+                <div className="Default-Option">
+                  <div>
+                    <label htmlFor={"story.stanzaCard"}>
+                      Stanza Card Style
+                    </label>
+                  </div>
+                  <Field name={"story.stanzaCard"} as="select">
+                    <option value="default">Default</option>
+                  </Field>
+                </div>
+                <TitleCard />
+
+                <FieldArray name="story.body">
                   {(stanzaHelpers) => (
                     <div>
-                      {values.stanzas.length
-                        ? values.stanzas.map((stanza, index) => (
+                      {values.story.body?.length
+                        ? values.story.body.map((stanza, index) => (
                             <StanzaRepeatable
+                              key={index}
                               index={index}
                               stanza={stanza}
                               stanzaHelpers={stanzaHelpers}
@@ -109,13 +145,14 @@ export default function BTForm({
                             stanzaHelpers.push({
                               stanza: "",
                               images: [],
-                              background: backgroundColor,
+                              background: values.story.defaultBackgroundColor,
                             })
                           }
                         >
                           Add Stanza
                         </button>
                       </div>
+                      <AttributionCard />
                     </div>
                   )}
                 </FieldArray>

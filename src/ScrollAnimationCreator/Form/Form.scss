@@ -64,7 +64,7 @@
     }
   }
 
-  div.Label-Input-Group.Top {
+  div.Label-Input-Group.First {
     margin-top: 5px;
   }
 
@@ -77,6 +77,19 @@
       width: 80px;
     }
   }
+}
+
+.Title-Input-Group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.Default-Option {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: 2px;
 }
 
 .Form-Image-Container .secondary {

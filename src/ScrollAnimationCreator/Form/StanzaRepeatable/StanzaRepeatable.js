@@ -26,22 +26,23 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
       >
         X
       </button>
-      <label htmlFor={`stanzas.${index}.stanza`} className="blue">
+      <label htmlFor={`story.body.${index}.stanza`} className="blue">
         Stanza {index + 1}
       </label>
       <Field
-        name={`stanzas.${index}.stanza`}
+        name={`story.body.${index}.stanza`}
         placeholder="Enter your stanza text here."
         as="textarea"
         rows="6"
         cols="30"
       />
-      <FieldArray name={`stanzas.${index}.images`}>
+      <FieldArray name={`story.body.${index}.images`}>
         {(imageHelpers) => (
           <>
             {stanza.images.length
               ? stanza.images.map((image, imageindex) => (
                   <ImageRepeatable
+                    key={index + "" + imageindex}
                     index={index}
                     imageindex={imageindex}
                     imageHelpers={imageHelpers}
@@ -66,8 +67,8 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
         )}
       </FieldArray>
       <div className="Background-Label-Input">
-        <label htmlFor={`stanzas.${index}.stanza`}>Background</label>
-        <Field name={`stanzas.${index}.background`} type="text" />
+        <label htmlFor={`story.body.${index}.stanza`}>Background</label>
+        <Field name={`story.body.${index}.background`} type="color" />
       </div>
     </div>
   );

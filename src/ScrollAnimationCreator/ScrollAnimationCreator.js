@@ -4,6 +4,7 @@ import Content from "./Content/Content";
 
 import Form from "./Form/Form";
 import "./ScrollAnimationCreator.scss";
+import { testStory } from "./testStory";
 
 /**
  * @function ScrollAnimationCreator
@@ -12,20 +13,14 @@ import "./ScrollAnimationCreator.scss";
  * @version 1.0.0
  */
 export default function ScrollAnimationCreator() {
-  const [story, setStory] = useState([]);
-  const [backgroundColor, setBackgroundColor] = useState("#DDDDDD");
+  const [story, setStory] = useState(testStory);
 
   return (
     <div id={"wrapper"}>
       <Menu pageWrapId={"page"} outerContainerId={"wrapper"}>
-        <Form
-          story={story}
-          setStory={setStory}
-          backgroundColor={backgroundColor}
-          setBackgroundColor={setBackgroundColor}
-        />
+        <Form story={story} setStory={setStory} />
       </Menu>
-      <Content story={story} backgroundColor={backgroundColor} />
+      <Content story={story} />
     </div>
   );
 }

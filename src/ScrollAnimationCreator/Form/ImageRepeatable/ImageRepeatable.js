@@ -29,11 +29,11 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
       </button>
       <legend className="blue">Image {imageindex + 1}</legend>
       <div className="Label-Input-Group First">
-        <label htmlFor={`stanzas.${index}.images.${imageindex}.component`}>
+        <label htmlFor={`story.body.${index}.images.${imageindex}.component`}>
           Image
         </label>
         <Field
-          name={`stanzas.${index}.images.${imageindex}.component`}
+          name={`story.body.${index}.images.${imageindex}.component`}
           as="select"
         >
           <optgroup label="Newport Nebraska">
@@ -75,11 +75,11 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         </Field>
       </div>
       <div className="Label-Input-Group">
-        <label htmlFor={`stanzas.${index}.images.${imageindex}.positionY`}>
+        <label htmlFor={`story.body.${index}.images.${imageindex}.positionY`}>
           Vertical
         </label>
         <Field
-          name={`stanzas.${index}.images.${imageindex}.positionY`}
+          name={`story.body.${index}.images.${imageindex}.positionY`}
           as="select"
         >
           <option value="top">Top</option>
@@ -88,11 +88,11 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         </Field>
       </div>
       <div className="Label-Input-Group">
-        <label htmlFor={`stanzas.${index}.images.${imageindex}.positionX`}>
+        <label htmlFor={`story.body.${index}.images.${imageindex}.positionX`}>
           Horizontal
         </label>
         <Field
-          name={`stanzas.${index}.images.${imageindex}.positionX`}
+          name={`story.body.${index}.images.${imageindex}.positionX`}
           as="select"
         >
           <option value="left">Left</option>
@@ -101,11 +101,11 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         </Field>
       </div>
       <div className="Label-Input-Group">
-        <label htmlFor={`stanzas.${index}.images.${imageindex}.animation`}>
+        <label htmlFor={`story.body.${index}.images.${imageindex}.animation`}>
           Animation
         </label>
         <Field
-          name={`stanzas.${index}.images.${imageindex}.animation`}
+          name={`story.body.${index}.images.${imageindex}.animation`}
           as="select"
         >
           <option value="fade">Fade</option>
@@ -122,11 +122,11 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         </Field>
       </div>
       <div className="Label-Input-Group">
-        <label htmlFor={`stanzas.${index}.images.${imageindex}.stanzaCount`}>
+        <label htmlFor={`story.body.${index}.images.${imageindex}.stanzaCount`}>
           Stanza Count
         </label>
         <Field
-          name={`stanzas.${index}.images.${imageindex}.stanzaCount`}
+          name={`story.body.${index}.images.${imageindex}.stanzaCount`}
           type="number"
         />
       </div>
