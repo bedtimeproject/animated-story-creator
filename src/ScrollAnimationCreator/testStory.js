@@ -5,6 +5,8 @@ export const testStory = {
   title: "A Scroll Animation",
   author: "FostyWally",
   titleCard: "default",
+  titleBackground: "#FF0000",
+  attributionBackground: "#00FF00",
   attributionCard: "default",
   stanzaCard: "default",
   attribution: "Written by FostyWally\nAnimated by Captain Code 😎",

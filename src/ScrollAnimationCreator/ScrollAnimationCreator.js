@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
-import Content from "./Content/Content";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
 import Form from "./Form/Form";
 import "./ScrollAnimationCreator.scss";
@@ -11,9 +11,11 @@ const startingObject = {
   stanzaBackgroundColor: "#FFFFFF",
   animationOverlap: "false",
   title: "",
+  titleBackground: "#FFFFFF",
   author: "",
   titleCard: "default",
   attributionCard: "default",
+  attributionBackground: "#FFFFFF",
   stanzaCard: "default",
   attribution: "",
   body: [],
@@ -23,7 +25,7 @@ const startingObject = {
  * @function ScrollAnimationCreator
  * @author Alexander Burdiss
  * @since 7/11/21
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default function ScrollAnimationCreator() {
   const [story, setStory] = useState(startingObject);
@@ -33,7 +35,9 @@ export default function ScrollAnimationCreator() {
       <Menu pageWrapId={"page"} outerContainerId={"wrapper"}>
         <Form story={story} setStory={setStory} />
       </Menu>
-      <Content story={story} />
+      <div id={"page"} className="Content-Wrap">
+        <ScrollAnimation story={story} />
+      </div>
     </div>
   );
 }

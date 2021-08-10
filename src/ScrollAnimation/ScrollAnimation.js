@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import DefaultTitle from "./DefaultTitle/DefaultTitle";
+import DefaultAttribution from "./DefaultAttribution/DefaultAttribution";
+import Body from "./Body/Body";
 
 /**
  * @function ScrollAnimation
@@ -12,20 +15,14 @@ import React, { useEffect } from "react";
  * preferrably in Viewport heights that will be attached to the body.
  * @author Alexander Burdiss
  * @since 6/26/21
- * @version 1.0.0
+ * @version 1.1.0
  * @component
  * @example
- * ```jsx
- * <ScrollAnimation bodyStyleMinHeight="4000vh">
- *   <Title background={stanzaBackgroundColor} author="Daniel Stigmon">
- *     The Guide to Sunset
- *   </Title>
- *   {...}
- * </ScrollAnimation>
- * ```
+ * <ScrollAnimation story={story}/>
  */
-export default function ScrollAnimation({ children, bodyStyleMinHeight }) {
+export default function ScrollAnimation({ story }) {
   useEffect(() => {
+    const bodyStyleMinHeight = `${story.body.length * 100}vh`;
     document.querySelector("#page").style.minHeight = bodyStyleMinHeight;
     function handleScroll() {
       document.body.style.setProperty(
@@ -41,7 +38,7 @@ export default function ScrollAnimation({ children, bodyStyleMinHeight }) {
       document.querySelector("#page").style.minHeight = "";
       document.body.style.removeProperty("--scroll");
     };
-  }, [bodyStyleMinHeight]);
+  }, [story.body.length]);
 
   return (
     <div className="ScrollAnimation-Container">
@@ -57,7 +54,33 @@ export default function ScrollAnimation({ children, bodyStyleMinHeight }) {
           animation-fill-mode: both;
         }
       `}</style>
-      {children}
+      {
+        {
+          default: (
+            <DefaultTitle
+              background={story.stanzaBackgroundColor}
+              author={story.author}
+              stanzaCount={story.body.length}
+            >
+              {story.title}
+            </DefaultTitle>
+          ),
+        }[story.titleCard]
+      }
+      <Body story={story} />
+      {
+        {
+          default: (
+            <DefaultAttribution
+              background={story.stanzaBackgroundColor}
+              stanzaCount={story.body.length}
+              backlink={"/poems/tales/"}
+            >
+              {story.attribution}
+            </DefaultAttribution>
+          ),
+        }[story.attributionCard]
+      }
     </div>
   );
 }

@@ -8,7 +8,7 @@ import { Field } from "formik";
  * @description Provides the options on the form for the attribution card.
  * @author Alexander Burdiss
  * @since 8/8/21
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default function AttributionCard() {
   return (
@@ -28,6 +28,10 @@ export default function AttributionCard() {
           rows="4"
           cols="30"
         ></Field>
+      </div>
+      <div className="Background-Label-Input">
+        <label htmlFor={"story.attributionBackground"}>Background</label>
+        <Field name={"story.attributionBackground"} type="color" />
       </div>
     </div>
   );

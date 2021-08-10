@@ -8,7 +8,7 @@ import { Field } from "formik";
  * @description Provides the options on the form for the title card.
  * @author Alexander Burdiss
  * @since 8/8/21
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default function TitleCard() {
   return (
@@ -27,6 +27,10 @@ export default function TitleCard() {
       <div className="Title-Input-Group">
         <label htmlFor={"story.author"}>Author</label>
         <Field name="story.author"></Field>
+      </div>
+      <div className="Background-Label-Input">
+        <label htmlFor={"story.titleBackground"}>Background</label>
+        <Field name={"story.titleBackground"} type="color" />
       </div>
     </div>
   );
