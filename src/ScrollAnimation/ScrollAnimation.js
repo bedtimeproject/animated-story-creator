@@ -21,6 +21,8 @@ import Body from "./Body/Body";
  * <ScrollAnimation story={story}/>
  */
 export default function ScrollAnimation({ story }) {
+  const oneIndexPercent = 100 / (story.body.length + 2);
+
   useEffect(() => {
     const bodyStyleMinHeight = `${story.body.length * 100}vh`;
     document.querySelector("#page").style.minHeight = bodyStyleMinHeight;
@@ -53,6 +55,24 @@ export default function ScrollAnimation({ story }) {
           animation-iteration-count: 1;
           animation-fill-mode: both;
         }
+
+        #title {
+          animation-name: title;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+        }
+
+        @keyframes title {
+          0% {
+            top: 34vh;
+          }
+          ${oneIndexPercent}% {
+            top: -100vh;
+          }
+          100% {
+            top: -100vh;
+          }
+        }
       `}</style>
       {
         {
@@ -60,7 +80,6 @@ export default function ScrollAnimation({ story }) {
             <DefaultTitle
               background={story.stanzaBackgroundColor}
               author={story.author}
-              stanzaCount={story.body.length}
             >
               {story.title}
             </DefaultTitle>
@@ -68,12 +87,30 @@ export default function ScrollAnimation({ story }) {
         }[story.titleCard]
       }
       <Body story={story} />
+      <style>{`
+        #attribution {
+          animation-name: attribution;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+        }
+
+        @keyframes attribution {
+          0% {
+            top: 100vh;
+          }
+          ${(story.body.length + 1) * oneIndexPercent}% {
+            top: 100vh;
+          }
+          100% {
+            top: 25vh;
+          }
+        }
+      `}</style>
       {
         {
           default: (
             <DefaultAttribution
               background={story.stanzaBackgroundColor}
-              stanzaCount={story.body.length}
               backlink={"/poems/tales/"}
             >
               {story.attribution}

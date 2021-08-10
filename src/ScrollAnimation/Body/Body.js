@@ -56,13 +56,44 @@ export default function Body({ story }) {
       {story.body.map((stanza, index) => {
         return (
           <div key={index}>
+            <style>{`
+              #stanza${index} {
+                animation-name: stanza${index};
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+              }
+
+              @keyframes stanza${index} {
+                0% {
+                  top: 100vh;
+                }
+                ${
+                  index > 0
+                    ? `${(index - 0.5) * oneIndexPercent}% {
+                    top: 100vh;
+                  }`
+                    : ""
+                }
+                ${index * oneIndexPercent}% {
+                  top: 34vh;
+                }
+                ${(index + 0.5) * oneIndexPercent}% {
+                  top: 34vh;
+                }
+                ${(index + 1) * oneIndexPercent}% {
+                  top: -100vh;
+                }
+                100% {
+                  top: -100%;
+                }
+              }
+            `}</style>
             {
               {
                 default: (
                   <DefaultStanza
-                    index={index + 1}
+                    index={index}
                     background={story.stanzaBackgroundColor}
-                    stanzaCount={story.body.length}
                     bodyBackground={
                       stanza.background
                         ? stanza.background
