@@ -22,7 +22,11 @@ export default function Content({ story }) {
   return (
     <div id={"page"} className="Content-Wrap">
       <ScrollAnimation bodyStyleMinHeight={`${story.body.length * 100}vh`}>
-        <Title background={story.stanzaBackgroundColor} author={story.author}>
+        <Title
+          background={story.stanzaBackgroundColor}
+          author={story.author}
+          stanzaCount={story.body.length}
+        >
           {story.title}
         </Title>
         <Body
