@@ -57,30 +57,30 @@ export default function Body({ story }) {
         return (
           <div key={index}>
             <style>{`
-              #stanza${index} {
-                animation-name: stanza${index};
+              #stanza${index + 1} {
+                animation-name: stanza${index + 1};
                 animation-duration: 1s;
                 animation-timing-function: ease-in-out;
               }
 
-              @keyframes stanza${index} {
+              @keyframes stanza${index + 1} {
                 0% {
                   top: 100vh;
                 }
                 ${
-                  index > 0
-                    ? `${(index - 0.5) * oneIndexPercent}% {
+                  index + 1 > 0
+                    ? `${(index + 1 - 0.5) * oneIndexPercent}% {
                     top: 100vh;
                   }`
                     : ""
                 }
-                ${index * oneIndexPercent}% {
-                  top: 34vh;
-                }
-                ${(index + 0.5) * oneIndexPercent}% {
-                  top: 34vh;
-                }
                 ${(index + 1) * oneIndexPercent}% {
+                  top: 34vh;
+                }
+                ${(index + 1 + 0.5) * oneIndexPercent}% {
+                  top: 34vh;
+                }
+                ${(index + 1 + 1) * oneIndexPercent}% {
                   top: -100vh;
                 }
                 100% {
@@ -92,7 +92,7 @@ export default function Body({ story }) {
               {
                 default: (
                   <DefaultStanza
-                    index={index}
+                    index={index + 1}
                     background={story.stanzaBackgroundColor}
                     bodyBackground={
                       stanza.background
