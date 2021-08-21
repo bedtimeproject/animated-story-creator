@@ -82,8 +82,9 @@ export default function BTForm({ story, setStory }) {
             <Form>
               <div className="Form">
                 <div className="Default-Option">
-                  <div>Default Background</div>
+                  <label htmlFor="defaultBackground">Default Background</label>
                   <input
+                    id="defaultBackground"
                     type="color"
                     value={values.story.defaultBackgroundColor}
                     onChange={(e) =>
@@ -98,8 +99,9 @@ export default function BTForm({ story, setStory }) {
                 </div>
 
                 <div className="Default-Option">
-                  <div>Card Background</div>
+                  <label htmlFor="cardBackground">Card Background</label>
                   <input
+                    id="cardBackground"
                     type="color"
                     value={values.story.stanzaBackgroundColor}
                     onChange={(e) =>
