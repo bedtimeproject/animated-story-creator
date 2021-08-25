@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Animated Story Creator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This tool helps to create animated stories. Created by Alexander Burdiss,
+this tool outputs JSON files that can be uploaded to the Animated Story
+module on the Bedtime Project website (www.bedtimeproject.org)
 
-## Available Scripts
+## A note before starting
 
-In the project directory, you can run:
+Do not refresh your browser while using this tool, as you will lose your
+progress.
 
-### `npm start`
+This tool will only render if you have two or more stanzas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Creating A story
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Global options exist on the top of the form. These items control a lot of data
+throughout the application.
 
-### `npm test`
+Items contained within a border control a specific section. Some items are
+repeatable, and you can add multiple of them. Repeatable elements are removable,
+but not drag-and-drop-able. When you remove an item from this tool, it is gone
+for good.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Images can be added from the select list (preferred), or via a URL. The URL
+of the external image should end in an image file format, such as .png or .jpg
 
-### `npm run build`
+After making changes in the form, click the blue render button at the bottom
+to load all your changes in to the story.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Saving a story, Loading a story.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After creating your story, you can save it to your local desktop by clicking
+the download button. This will download a JSON object that you can then upload
+to the tool at a later date, to continue work on it. To load a story, select
+it from the browse button, then click upload. This action will erase all data
+in the form.
