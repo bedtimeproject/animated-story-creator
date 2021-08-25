@@ -17,6 +17,11 @@ import { Field, useField } from "formik";
  */
 export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
   const select = useField(`story.body.${index}.images.${imageindex}.component`);
+  const rotation = useField(
+    `story.body.${index}.images.${imageindex}.rotation`
+  );
+  const scale = useField(`story.body.${index}.images.${imageindex}.scale`);
+
   return (
     <fieldset key={index + "" + imageindex} className="Form-Image-Container">
       <button
@@ -29,6 +34,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         X
       </button>
       <legend className="blue">Image {imageindex + 1}</legend>
+
       <div className="Label-Input-Group First">
         <label htmlFor={`story.body.${index}.images.${imageindex}.component`}>
           Image
@@ -79,6 +85,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           </optgroup>
         </Field>
       </div>
+
       <div
         className={`Label-Input-Group ${
           select[0]?.value === "url" ? "" : "hidden"
@@ -93,6 +100,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           id="UrlInput"
         />
       </div>
+
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.positionY`}>
           Vertical
@@ -106,6 +114,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="bottom">Bottom</option>
         </Field>
       </div>
+
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.positionX`}>
           Horizontal
@@ -119,6 +128,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="right">Right</option>
         </Field>
       </div>
+
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.animation`}>
           Animation
@@ -140,6 +150,7 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           <option value="slideupright">Slide Up Right</option>
         </Field>
       </div>
+
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.stanzaCount`}>
           Stanza Count
@@ -147,6 +158,31 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         <Field
           name={`story.body.${index}.images.${imageindex}.stanzaCount`}
           type="number"
+        />
+      </div>
+
+      <div className="Label-Input-Group">
+        <label htmlFor={`story.body.${index}.images.${imageindex}.rotation`}>
+          Rotation {rotation[0].value}°
+        </label>
+        <Field
+          name={`story.body.${index}.images.${imageindex}.rotation`}
+          type="range"
+          min={0}
+          max={360}
+        />
+      </div>
+
+      <div className="Label-Input-Group">
+        <label htmlFor={`story.body.${index}.images.${imageindex}.scale`}>
+          Scale {scale[0].value}
+        </label>
+        <Field
+          name={`story.body.${index}.images.${imageindex}.scale`}
+          type="range"
+          min={0}
+          max={5}
+          step={0.1}
         />
       </div>
     </fieldset>

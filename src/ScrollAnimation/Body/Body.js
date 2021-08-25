@@ -8,7 +8,7 @@ import StanzaImage from "../StanzaImage/StanzaImage";
  * together for easier implementation of an animated story.
  * @author Alexander Burdiss
  * @since 7/8/21
- * @version 2.0.0
+ * @version 2.1.0
  * @param props The JSX props passed to this React component
  * @param {Object[]} props.story The story object with all of the config baked
  * in.
@@ -117,6 +117,8 @@ export default function Body({ story }) {
                   positionY={imageObject.positionY}
                   stanzaDuration={imageObject.stanzaCount}
                   url={imageObject.url}
+                  rotation={imageObject.rotation}
+                  scale={imageObject.scale}
                   animationOverlap={story.animationOverlap}
                 >
                   {imageObject.component}

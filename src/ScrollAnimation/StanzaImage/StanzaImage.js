@@ -78,11 +78,13 @@ import Shrub2 from "../../assets/images/Shrub2.svg";
  * @param {number} props.stanzaDuration The number of stanzas that this image
  * should remain onscreen.
  * @param {string} props.url A url to use for an external image.
+ * @param {number} props.rotation The rotation of the image.
+ * @param {number} props.scale The amount to scale the image
  * @param {Boolean} props.animationOverlap Whether the animations should overlap
  * with the previous and next animations
  * @author Alexander Burdiss
  * @since 7/10/21
- * @version 1.1.0
+ * @version 1.3.0
  */
 export default function StanzaImage({
   children,
@@ -94,6 +96,8 @@ export default function StanzaImage({
   positionY,
   stanzaDuration,
   url,
+  rotation,
+  scale,
   animationOverlap,
 }) {
   const oneIndexPercent = 100 / (stanzaCount + 2);
@@ -108,7 +112,10 @@ export default function StanzaImage({
         }
 
         #stanza${index}Image${imageIndex} img {
-          height: 250px;
+          height: ${250 * scale}px;
+          transform: translateX(-${(scale - 1) * 120}px) translateY(-${
+        (scale - 1) * 120
+      }px) rotate(${rotation}deg);
         }
 
         ${

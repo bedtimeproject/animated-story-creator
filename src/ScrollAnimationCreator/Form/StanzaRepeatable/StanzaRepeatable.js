@@ -59,6 +59,8 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
                   positionY: "center",
                   animation: "fade",
                   stanzaCount: 1,
+                  rotation: 0,
+                  scale: 1,
                 })
               }
             >

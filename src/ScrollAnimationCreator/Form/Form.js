@@ -76,6 +76,9 @@ export default function BTForm({ story, setStory }) {
         onSubmit={(values) => {
           setStory(values.story);
         }}
+        onChange={(values) => {
+          setStory(values.story);
+        }}
       >
         {({ values }) => (
           <>
