@@ -84,7 +84,7 @@ import Shrub2 from "../../assets/images/Shrub2.svg";
  * with the previous and next animations
  * @author Alexander Burdiss
  * @since 7/10/21
- * @version 1.3.0
+ * @version 1.3.1
  */
 export default function StanzaImage({
   children,
@@ -113,8 +113,8 @@ export default function StanzaImage({
 
         #stanza${index}Image${imageIndex} img {
           height: ${250 * scale}px;
-          transform: translateX(-${(scale - 1) * 120}px) translateY(-${
-        (scale - 1) * 120
+          transform: translateX(-${(250 * scale) / 2}px) translateY(-${
+        (250 * scale) / 2
       }px) rotate(${rotation}deg);
         }
 
