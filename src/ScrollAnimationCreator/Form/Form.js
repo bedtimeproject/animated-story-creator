@@ -128,6 +128,18 @@ export default function BTForm({ story, setStory }) {
 
                 <div className="Default-Option">
                   <div>
+                    <label htmlFor={"story.font"}>Font</label>
+                  </div>
+                  <Field name={"story.font"} as="select">
+                    <option>Lora</option>
+                    <option>Ubuntu</option>
+                    <option>Indie Flower</option>
+                    <option>Quicksand</option>
+                  </Field>
+                </div>
+
+                <div className="Default-Option">
+                  <div>
                     <label htmlFor={"story.animationOverlap"}>
                       Animation Overlap
                     </label>
