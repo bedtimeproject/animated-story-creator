@@ -1,5 +1,5 @@
 import React from "react";
-import { Field } from "formik";
+import { Field, useField } from "formik";
 
 /**
  * @namespace ImageRepeatable
@@ -16,6 +16,7 @@ import { Field } from "formik";
  * the form layout in relation to these images.
  */
 export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
+  const select = useField(`story.body.${index}.images.${imageindex}.component`);
   return (
     <fieldset key={index + "" + imageindex} className="Form-Image-Container">
       <button
@@ -36,6 +37,10 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
           name={`story.body.${index}.images.${imageindex}.component`}
           as="select"
         >
+          <option disabled value="null">
+            -- select an option --
+          </option>
+          <option value="url">From URL</option>
           <optgroup label="Newport Nebraska">
             <option>Alaska Flag</option>
             <option>California Flag</option>
@@ -73,6 +78,20 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
             <option>Treasure</option>
           </optgroup>
         </Field>
+      </div>
+      <div
+        className={`Label-Input-Group ${
+          select[0]?.value === "url" ? "" : "hidden"
+        }`}
+      >
+        <label htmlFor={`story.body.${index}.images.${imageindex}.url`}>
+          URL
+        </label>
+        <Field
+          name={`story.body.${index}.images.${imageindex}.url`}
+          type="url"
+          id="UrlInput"
+        />
       </div>
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.positionY`}>

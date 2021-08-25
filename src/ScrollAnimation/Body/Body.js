@@ -116,6 +116,7 @@ export default function Body({ story }) {
                   positionX={imageObject.positionX}
                   positionY={imageObject.positionY}
                   stanzaDuration={imageObject.stanzaCount}
+                  url={imageObject.url}
                   animationOverlap={story.animationOverlap}
                 >
                   {imageObject.component}

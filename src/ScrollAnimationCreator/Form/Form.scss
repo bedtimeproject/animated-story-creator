@@ -64,6 +64,10 @@
     }
   }
 
+  div.Label-Input-Group.hidden {
+    display: none;
+  }
+
   div.Label-Input-Group.First {
     margin-top: 5px;
   }
@@ -77,6 +81,10 @@
       width: 80px;
     }
   }
+}
+
+#UrlInput {
+  width: 200px;
 }
 
 .Title-Input-Group {

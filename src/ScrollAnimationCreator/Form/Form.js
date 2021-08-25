@@ -87,14 +87,14 @@ export default function BTForm({ story, setStory }) {
                     id="defaultBackground"
                     type="color"
                     value={values.story.defaultBackgroundColor}
-                    onChange={(e) =>
-                      setStory((previous) => {
+                    onChange={(e) => {
+                      setStory(() => {
                         return {
-                          ...previous,
+                          ...values.story,
                           defaultBackgroundColor: e.target.value,
                         };
-                      })
-                    }
+                      });
+                    }}
                   />
                 </div>
 
@@ -105,9 +105,9 @@ export default function BTForm({ story, setStory }) {
                     type="color"
                     value={values.story.stanzaBackgroundColor}
                     onChange={(e) =>
-                      setStory((previous) => {
+                      setStory(() => {
                         return {
-                          ...previous,
+                          ...values.story,
                           stanzaBackgroundColor: e.target.value,
                         };
                       })

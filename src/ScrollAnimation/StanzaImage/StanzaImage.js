@@ -77,9 +77,12 @@ import Shrub2 from "../../assets/images/Shrub2.svg";
  * 'top', 'center', 'bottom'
  * @param {number} props.stanzaDuration The number of stanzas that this image
  * should remain onscreen.
+ * @param {string} props.url A url to use for an external image.
+ * @param {Boolean} props.animationOverlap Whether the animations should overlap
+ * with the previous and next animations
  * @author Alexander Burdiss
  * @since 7/10/21
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default function StanzaImage({
   children,
@@ -90,6 +93,7 @@ export default function StanzaImage({
   positionX,
   positionY,
   stanzaDuration,
+  url,
   animationOverlap,
 }) {
   const oneIndexPercent = 100 / (stanzaCount + 2);
@@ -250,6 +254,7 @@ export default function StanzaImage({
         <img
           src={
             {
+              url: url,
               // Newport Nebraska
               "Alaska Flag": AlaskaFlag,
               "California Flag": CaliforniaFlag,

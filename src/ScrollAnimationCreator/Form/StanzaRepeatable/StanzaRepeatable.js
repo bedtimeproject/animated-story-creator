@@ -53,7 +53,8 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
               type="button"
               onClick={() =>
                 imageHelpers.push({
-                  component: undefined,
+                  component: "null",
+                  url: "",
                   positionX: "center",
                   positionY: "center",
                   animation: "fade",
