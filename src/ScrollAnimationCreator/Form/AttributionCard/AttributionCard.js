@@ -18,6 +18,7 @@ export default function AttributionCard() {
         <label htmlFor={"story.attributionCard"}>Card Style</label>
         <Field name={"story.attributionCard"} as="select">
           <option value="default">Default</option>
+          <option value="centered">Centered</option>
         </Field>
       </div>
       <div>

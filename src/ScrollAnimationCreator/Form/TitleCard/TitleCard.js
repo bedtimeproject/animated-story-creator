@@ -18,6 +18,7 @@ export default function TitleCard() {
         <label htmlFor={"story.titleCard"}>Card Style</label>
         <Field name={"story.titleCard"} as="select">
           <option value="default">Default</option>
+          <option value="centered">Centered</option>
         </Field>
       </div>
       <div className="Title-Input-Group">
