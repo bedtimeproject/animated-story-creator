@@ -84,7 +84,7 @@ import Shrub2 from "../../assets/images/Shrub2.svg";
  * with the previous and next animations
  * @author Alexander Burdiss
  * @since 7/10/21
- * @version 1.3.1
+ * @version 2.0.0
  */
 export default function StanzaImage({
   children,
@@ -100,6 +100,8 @@ export default function StanzaImage({
   scale,
   animationOverlap,
 }) {
+  const scaleValue = scale != undefined ? scale : 1;
+  const rotationValue = scale != undefined ? rotation : 0;
   const oneIndexPercent = 100 / (stanzaCount + 2);
 
   return (
@@ -111,11 +113,11 @@ export default function StanzaImage({
           animation-timing-function: linear;
         }
 
-        #stanza${index}Image${imageIndex} img {
-          height: ${250 * scale}px;
-          transform: translateX(-${(250 * scale) / 2}px) translateY(-${
-        (250 * scale) / 2
-      }px) rotate(${rotation}deg);
+        #stanza${index}Image${imageIndex} .Image {
+          height: ${250 * scaleValue}px;
+          transform: translateX(-${(250 * scaleValue) / 2}px) translateY(-${
+        (250 * scaleValue) / 2
+      }px) rotate(${rotationValue}deg);
         }
 
         ${

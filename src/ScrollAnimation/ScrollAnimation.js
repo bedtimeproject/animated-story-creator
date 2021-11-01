@@ -18,7 +18,7 @@ import Body from "./Body/Body";
  * preferrably in Viewport heights that will be attached to the body.
  * @author Alexander Burdiss
  * @since 6/26/21
- * @version 1.2.0
+ * @version 2.0.0
  * @component
  * @example
  * <ScrollAnimation story={story}/>
