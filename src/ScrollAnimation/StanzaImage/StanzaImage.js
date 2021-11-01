@@ -35,8 +35,6 @@ import Kite from "../../assets/images/BlueKite.svg";
 import Ramen from "../../assets/images/Ramen.svg";
 import Town from "../../assets/images/Town.svg";
 import Treasure from "../../assets/images/Treasure.svg";
-import Mountain from "../../assets/images/Mountain.svg";
-import Sun from "../../assets/images/Sun.svg";
 import ActionBox from "../../assets/images/ActionBox.svg";
 import Bed from "../../assets/images/Bed.svg";
 import Constellation2 from "../../assets/images/Constellation2.svg";
@@ -50,6 +48,10 @@ import Penny from "../../assets/images/Penny.svg";
 import PinkPoodle from "../../assets/images/PinkPoodle.svg";
 import Shrub1 from "../../assets/images/Shrub1.svg";
 import Shrub2 from "../../assets/images/Shrub2.svg";
+
+// Mrs. Blue Sky
+import Mountain from "../../assets/images/Mountain.svg";
+import Sun from "../../assets/images/Sun.svg";
 
 /**
  * NOTE: This is different than the one in the Bedtime project!
@@ -283,8 +285,6 @@ export default function StanzaImage({
               Ramen: Ramen,
               Town: Town,
               Treasure: Treasure,
-              Mountain: Mountain,
-              Sun: Sun,
               "Action Box": ActionBox,
               Bed: Bed,
               "Constellation 2": Constellation2,
@@ -298,6 +298,9 @@ export default function StanzaImage({
               "Pink Poodle": PinkPoodle,
               "Shrub 1": Shrub1,
               "Shrub 2": Shrub2,
+              // Mrs. Blue Sky
+              Mountain: Mountain,
+              Sun: Sun,
             }[children]
           }
           alt={children}
