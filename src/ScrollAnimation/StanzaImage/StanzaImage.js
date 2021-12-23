@@ -57,7 +57,6 @@ import Sun from "../../assets/images/Sun.svg";
 /**
  * NOTE: This is different than the one in the Bedtime project!
  *
- *
  * @function stanzaImage
  * @description Displays One image for the stanza.
  * @param {object} props The JSX props passed to this React component
@@ -87,7 +86,7 @@ import Sun from "../../assets/images/Sun.svg";
  * with the previous and next animations
  * @author Alexander Burdiss
  * @since 7/10/21
- * @version 2.0.0
+ * @version 2.0.1
  */
 export default function StanzaImage({
   children,
@@ -104,7 +103,7 @@ export default function StanzaImage({
   animationOverlap,
 }) {
   const scaleValue = scale != undefined ? scale : 1;
-  const rotationValue = scale != undefined ? rotation : 0;
+  const rotationValue = rotation != undefined ? rotation : 0;
   const oneIndexPercent = 100 / (stanzaCount + 2);
 
   return (
@@ -264,6 +263,7 @@ export default function StanzaImage({
         }}
       >
         <img
+          className="Image"
           src={
             {
               url: url,
@@ -305,7 +305,7 @@ export default function StanzaImage({
             }[children]
           }
           // @ts-ignore
-          alt={children}
+          alt={""}
         />
       </div>
     </div>
