@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1a75242.chunk.css",
-    "main.js": "/static/js/main.0b9f9b76.chunk.js",
-    "main.js.map": "/static/js/main.0b9f9b76.chunk.js.map",
+    "main.css": "/static/css/main.c690111f.chunk.css",
+    "main.js": "/static/js/main.caece482.chunk.js",
+    "main.js.map": "/static/js/main.caece482.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1ad1fd56.js",
     "runtime-main.js.map": "/static/js/runtime-main.1ad1fd56.js.map",
     "static/js/2.8e04ad70.chunk.js": "/static/js/2.8e04ad70.chunk.js",
     "static/js/2.8e04ad70.chunk.js.map": "/static/js/2.8e04ad70.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c1a75242.chunk.css.map": "/static/css/main.c1a75242.chunk.css.map",
+    "static/css/main.c690111f.chunk.css.map": "/static/css/main.c690111f.chunk.css.map",
     "static/js/2.8e04ad70.chunk.js.LICENSE.txt": "/static/js/2.8e04ad70.chunk.js.LICENSE.txt",
     "static/media/ActionBox.abbb1e96.svg": "/static/media/ActionBox.abbb1e96.svg",
     "static/media/AlaskaFlag.7e7b0af5.svg": "/static/media/AlaskaFlag.7e7b0af5.svg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.1ad1fd56.js",
     "static/js/2.8e04ad70.chunk.js",
-    "static/css/main.c1a75242.chunk.css",
-    "static/js/main.0b9f9b76.chunk.js"
+    "static/css/main.c690111f.chunk.css",
+    "static/js/main.caece482.chunk.js"
   ]
 }
