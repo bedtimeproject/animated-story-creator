@@ -16,6 +16,7 @@ import AttributionCard from "./AttributionCard/AttributionCard";
  * @version 2.0.1
  */
 export default function BTForm({ story, setStory }) {
+  const VERSION = "2.0.1";
   const [fileUpload, setFileUpload] = useState(null);
 
   /**
@@ -100,7 +101,6 @@ export default function BTForm({ story, setStory }) {
                     }}
                   />
                 </div>
-
                 <div className="Default-Option">
                   <label htmlFor="cardBackground">Card Background</label>
                   <input
@@ -117,7 +117,6 @@ export default function BTForm({ story, setStory }) {
                     }
                   />
                 </div>
-
                 <div className="Default-Option">
                   <div>
                     <label htmlFor={"story.stanzaCard"}>
@@ -128,7 +127,6 @@ export default function BTForm({ story, setStory }) {
                     <option value="default">Default</option>
                   </Field>
                 </div>
-
                 <div className="Default-Option">
                   <div>
                     <label htmlFor={"story.font"}>Font</label>
@@ -140,7 +138,6 @@ export default function BTForm({ story, setStory }) {
                     <option>Quicksand</option>
                   </Field>
                 </div>
-
                 <div className="Default-Option">
                   <div>
                     <label htmlFor={"story.animationOverlap"}>
@@ -152,9 +149,7 @@ export default function BTForm({ story, setStory }) {
                     <option value="false">No</option>
                   </Field>
                 </div>
-
                 <TitleCard />
-
                 <FieldArray name="story.body">
                   {(stanzaHelpers) => (
                     <div>
@@ -186,6 +181,7 @@ export default function BTForm({ story, setStory }) {
                     </div>
                   )}
                 </FieldArray>
+                Version: {VERSION}
               </div>
               <div className="Save-Button-Container">
                 <input

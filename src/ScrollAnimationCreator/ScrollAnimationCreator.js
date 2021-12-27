@@ -25,14 +25,14 @@ const startingObject = {
  * @function ScrollAnimationCreator
  * @author Alexander Burdiss
  * @since 7/11/21
- * @version 1.1.0
+ * @version 1.1.1
  */
 export default function ScrollAnimationCreator() {
   const [story, setStory] = useState(startingObject);
 
   return (
     <div id={"wrapper"}>
-      <Menu pageWrapId={"page"} outerContainerId={"wrapper"}>
+      <Menu pageWrapId={"page"} outerContainerId={"wrapper"} width={350}>
         <Form story={story} setStory={setStory} />
       </Menu>
       <div id={"page"} className="Content-Wrap">

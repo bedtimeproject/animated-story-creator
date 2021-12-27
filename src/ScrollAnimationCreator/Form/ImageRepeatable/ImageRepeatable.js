@@ -7,8 +7,8 @@ import { Field, useField } from "formik";
  * @description A repeatable image form field.
  * @author Alexander Burdiss
  * @since 8/1/21
- * @version 1.0.0
- * @param {*} props The JSX props passed to this React component
+ * @version 1.1.0
+ * @param {object} props The JSX props passed to this React component
  * @param {number} props.index The index of the stanza this image form section
  * is in
  * @param {number} props.imageindex The index that this image is in the form
@@ -17,10 +17,6 @@ import { Field, useField } from "formik";
  */
 export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
   const select = useField(`story.body.${index}.images.${imageindex}.component`);
-  const rotation = useField(
-    `story.body.${index}.images.${imageindex}.rotation`
-  );
-  const scale = useField(`story.body.${index}.images.${imageindex}.scale`);
 
   return (
     <fieldset key={index + "" + imageindex} className="Form-Image-Container">
@@ -107,12 +103,16 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         </label>
         <Field
           name={`story.body.${index}.images.${imageindex}.positionY`}
-          as="select"
-        >
-          <option value="top">Top</option>
-          <option value="center">Center</option>
-          <option value="bottom">Bottom</option>
-        </Field>
+          type="number"
+          min={0}
+          max={100}
+        />
+        <Field
+          name={`story.body.${index}.images.${imageindex}.positionY`}
+          type="range"
+          min={0}
+          max={100}
+        />
       </div>
 
       <div className="Label-Input-Group">
@@ -121,12 +121,17 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
         </label>
         <Field
           name={`story.body.${index}.images.${imageindex}.positionX`}
-          as="select"
-        >
-          <option value="left">Left</option>
-          <option value="center">Center</option>
-          <option value="right">Right</option>
-        </Field>
+          type="number"
+          min={0}
+          max={100}
+        />
+        <Field
+          name={`story.body.${index}.images.${imageindex}.positionX`}
+          type="range"
+          min={0}
+          max={100}
+          id="HorizontalRangeSlider"
+        />
       </div>
 
       <div className="Label-Input-Group">
@@ -163,8 +168,14 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
 
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.rotation`}>
-          Rotation {rotation[0].value}°
+          Rotate (°)
         </label>
+        <Field
+          name={`story.body.${index}.images.${imageindex}.rotation`}
+          type="number"
+          min={0}
+          max={360}
+        />
         <Field
           name={`story.body.${index}.images.${imageindex}.rotation`}
           type="range"
@@ -175,8 +186,15 @@ export default function ImageRepeatable({ index, imageindex, imageHelpers }) {
 
       <div className="Label-Input-Group">
         <label htmlFor={`story.body.${index}.images.${imageindex}.scale`}>
-          Scale {scale[0].value}
+          Scale
         </label>
+        <Field
+          name={`story.body.${index}.images.${imageindex}.scale`}
+          type="number"
+          min={0}
+          max={5}
+          step={0.1}
+        />
         <Field
           name={`story.body.${index}.images.${imageindex}.scale`}
           type="range"

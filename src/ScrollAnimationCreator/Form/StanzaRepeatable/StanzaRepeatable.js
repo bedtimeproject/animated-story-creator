@@ -55,8 +55,8 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
                 imageHelpers.push({
                   component: "null",
                   url: "",
-                  positionX: "center",
-                  positionY: "center",
+                  positionX: 50,
+                  positionY: 50,
                   animation: "fade",
                   stanzaCount: 1,
                   rotation: 0,
@@ -71,6 +71,7 @@ export default function StanzaRepeatable({ index, stanza, stanzaHelpers }) {
       </FieldArray>
       <div className="Background-Label-Input">
         <label htmlFor={`story.body.${index}.stanza`}>Background</label>
+        <Field name={`story.body.${index}.background`} type="text" />
         <Field name={`story.body.${index}.background`} type="color" />
       </div>
     </div>
