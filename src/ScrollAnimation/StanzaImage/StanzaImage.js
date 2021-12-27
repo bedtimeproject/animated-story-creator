@@ -117,6 +117,7 @@ export default function StanzaImage({
 
         #stanza${index}Image${imageIndex} .Image {
           height: ${250 * scaleValue}px;
+          min-width: ${250 * scaleValue}px;
           transform: translateX(-${(250 * scaleValue) / 2}px) translateY(-${
         (250 * scaleValue) / 2
       }px) rotate(${rotationValue}deg);
